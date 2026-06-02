@@ -28,7 +28,7 @@ export default function Hero() {
         </div>
 
         <div className="hidden lg:flex w-150 h-auto bg-white p-3 rounded-2xl shadow-2xl rotate-3 hover:rotate-0 transition-all duration-500">
-          <img src="assets/hero1.jpg" alt="" className="rounded-2xl" />
+          <img src="/public/hero1.jpg" alt="" className="rounded-2xl" />
         </div>
       </div>
     </header>
