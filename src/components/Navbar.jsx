@@ -15,7 +15,7 @@ export default function Navbar() {
       <nav className="container mx-auto fixed top-0 left-0 z-50 transition-all duration-300 bg-white min-w-full">
         <div className="flex justify-between items-center px-4 py-6 md:px-6 lg:px-8 ">
           <div className="flex gap-2 items-center">
-            <img src="src/assets/logo.png" alt="" className="w-10 h-10" />
+            <img src="/logo.png" alt="" className="w-10 h-10" />
             <h1 className="text-xl md:text-2xl font-bold text-[#7A211E] font-grotesk">
               Inspire4Impact
             </h1>

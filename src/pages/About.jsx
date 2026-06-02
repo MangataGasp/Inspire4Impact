@@ -10,7 +10,7 @@ export default function About() {
            <div className="absolute -top-10 -left-10 bottom-0 w-32 h-32 bg-[#FF6B35] rounded-[60%_40%_30%_70%/60%_30%_70%_40%] opacity-20"></div> 
           <div className="relative overflow-hidden rounded-3xl shadow-2xl mx-2">
             <img
-              src="/public/about.png"
+              src="about.png"
               alt="youths displaying their tribes"
               className="w-full h-auto"
             />
