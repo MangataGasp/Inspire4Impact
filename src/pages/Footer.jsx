@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 container mx-auto text-[#57000e]">
           <div className="space-y-6">
             <div className="flex gap-2 items-center mb-4">
-              <img src="src/assets/logo.png" alt="" className="w-10 h-10" />
+              <img src="/logo.png" alt="" className="w-10 h-10" />
               <span className="text-white text-3xl md:text-5xl font-semibold">
                 Inspire4Impact
               </span>
