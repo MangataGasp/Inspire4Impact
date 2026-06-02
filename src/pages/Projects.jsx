@@ -22,7 +22,7 @@ export default function Projects() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 mx-2">
         <div className="group border border-[#e5e2e1] hover:translate-xy-8 hover:scale-[1.02] transition-all duration-300 shadow-sm hover:shadow-xl rounded-2xl hover:border-[#FF6B35]">
           <img
-            src="src/assets/prof1.png"
+            src="assets/prof1.png"
             alt=""
             className="w-full h-80 object-cover rounded-tr-2xl rounded-tl-2xl "
           />
@@ -48,7 +48,7 @@ export default function Projects() {
 
         <div className=" group border border-[#e5e2e1] hover:translate-xy-8 hover:scale-[1.02] transition-all duration-300 shadow-sm hover:shadow-xl rounded-2xl hover:border-[#3d1ce4]">
           <img
-            src="src/assets/prof2.png"
+            src="assets/prof2.png"
             alt=""
             className="w-full h-80 object-cover rounded-tr-2xl rounded-tl-2xl group-hover:scale-100 transition-transform duration-500 "
           />
@@ -74,7 +74,7 @@ export default function Projects() {
 
         <div className="group border border-[#e5e2e1] hover:translate-xy-8 hover:scale-[1.02] transition-all duration-300 shadow-sm hover:shadow-xl rounded-2xl hover:border-[#FF6B35]">
           <img
-            src="src/assets/prof3.png"
+            src="assets/prof3.png"
             alt=""
             className="w-full h-80 object-cover rounded-tr-2xl rounded-tl-2xl "
           />
