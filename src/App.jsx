@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './pages/Hero'
-import Story from './components/Story'
 import Stories from './pages/Stories'
 import About from './pages/About'
 import Projects from './pages/Projects'
