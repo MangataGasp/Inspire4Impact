@@ -1,12 +1,15 @@
 import React from "react";
-import { motion } from 'motion/react';
+import { motion } from "framer-motion";
 export default function Hero() {
   return (
-    <header
-      className="relative mt-20 lg:mt-0 py-20 lg:py-32 overflow-hidden bg-linear-to-br from-[#FDFCFB] to-[#f6f3f2]"
-    >
+    <header className="relative mt-20 lg:mt-0 py-20 lg:py-32 overflow-hidden bg-linear-to-br from-[#FDFCFB] to-[#f6f3f2]">
       <div className="container mx-auto px-8 grid lg:grid-cols-2 gap-60 items-center ">
-        <div>
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
           <p className="uppercase max-w-fit border border-[#FF6B35] text-sm mb-5 text-[#FF6B35] bg-[#faddd3] px-3 py-1 rounded-2xl">
             Fueling African Innovation
           </p>
@@ -25,11 +28,18 @@ export default function Hero() {
               Learn More
             </div>
           </div>
-        </div>
-
-        <div className="hidden lg:flex w-150 h-auto bg-white p-3 rounded-2xl shadow-2xl rotate-3 hover:rotate-0 transition-all duration-500">
+        </motion.div>
+        <motion.div initial={{ opacity: 0, rotate: "30deg" }}
+          whileInView={{ opacity: 3, rotate: 3 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className=" hidden lg:flex border border-slate-300 rounded-2xl shadow-2xl transition-all duration-500">
+          <div
+          className="hidden lg:flex w-150 h-auto bg-white p-3 rounded-2xl shadow-2xl rotate-3 hover:rotate-0 transition-all duration-500"
+        >
           <img src="hero1.jpg" alt="" className="rounded-2xl" />
         </div>
+        </motion.div>
       </div>
     </header>
   );

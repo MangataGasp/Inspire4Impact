@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa6";
 import { IoMdArrowForward } from "react-icons/io";
 
@@ -20,7 +21,13 @@ export default function Projects() {
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 mx-2">
-        <div className="group border border-[#e5e2e1] hover:translate-xy-8 hover:scale-[1.02] transition-all duration-300 shadow-sm hover:shadow-xl rounded-2xl hover:border-[#FF6B35]">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="group border border-[#e5e2e1] hover:translate-xy-8 hover:scale-[1.02] transition-all duration-300 shadow-sm hover:shadow-xl rounded-2xl hover:border-[#FF6B35]"
+        >
           <img
             src="/prof1.png"
             alt=""
@@ -44,9 +51,15 @@ export default function Projects() {
               </span>
             </a>
           </div>
-        </div>
+        </motion.div>
 
-        <div className=" group border border-[#e5e2e1] hover:translate-xy-8 hover:scale-[1.02] transition-all duration-300 shadow-sm hover:shadow-xl rounded-2xl hover:border-[#3d1ce4]">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className=" group border border-[#e5e2e1] hover:translate-xy-8 hover:scale-[1.02] transition-all duration-300 shadow-sm hover:shadow-xl rounded-2xl hover:border-[#3d1ce4]"
+        >
           <img
             src="/prof2.png"
             alt=""
@@ -70,9 +83,15 @@ export default function Projects() {
               </span>
             </a>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="group border border-[#e5e2e1] hover:translate-xy-8 hover:scale-[1.02] transition-all duration-300 shadow-sm hover:shadow-xl rounded-2xl hover:border-[#FF6B35]">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 1 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="group border border-[#e5e2e1] hover:translate-xy-8 hover:scale-[1.02] transition-all duration-300 shadow-sm hover:shadow-xl rounded-2xl hover:border-[#FF6B35]"
+        >
           <img
             src="/prof3.png"
             alt=""
@@ -96,7 +115,7 @@ export default function Projects() {
               </span>
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

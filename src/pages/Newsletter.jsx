@@ -1,10 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Newsletter() {
   return (
     <div>
       <section className="mt-32 px-6">
-        <div className="container mx-auto bg-linear-to-r from-[#7A211E] to-[#7A211E] rounded-4xl p-10 md:p-16 relative overflow-hidden text-white shadow-2xl">
+        <motion.div initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 1 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}  className="container mx-auto bg-linear-to-r from-[#7A211E] to-[#7A211E] rounded-4xl p-10 md:p-16 relative overflow-hidden text-white shadow-2xl">
           <div className="absolute -top-12 -right-12 w-64 h-64 bg-white/10 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] pointer-events-none"></div>
           <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -17,7 +21,7 @@ export default function Newsletter() {
                 your inbox.
               </p>
             </div>
-            <div class="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <input
                 className="grow px-6 py-4 rounded-xl bg-white/10 border border-white/30 text-white placeholder:text-white/60 focus:outline-none focus:border-2 focus:border-[#FF6B35] transition-all font-body-md"
                 placeholder="Your Email Address"
@@ -28,7 +32,7 @@ export default function Newsletter() {
               </button>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </div>
   );

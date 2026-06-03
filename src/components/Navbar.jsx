@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { CiMenuBurger } from "react-icons/ci";
 import { RiCloseLargeFill } from "react-icons/ri";
 const styles = {
@@ -12,7 +13,13 @@ export default function Navbar() {
   };
   return (
     <div className="relative overflow-hidden">
-      <nav className="container mx-auto fixed top-0 left-0 z-50 transition-all duration-300 bg-white min-w-full">
+      <motion.nav
+        initial={{ y: "-100%" }}
+        animate={{ y: 0 }}
+        exit={{ y: "-100%" }}
+        transition={{ duration: 0.4 }}
+        className="container mx-auto fixed top-0 left-0 z-50 transition-all duration-300 bg-white min-w-full"
+      >
         <div className="flex justify-between items-center px-4 py-6 md:px-6 lg:px-8 ">
           <div className="flex gap-2 items-center">
             <img src="/logo.png" alt="" className="w-10 h-10" />
@@ -58,27 +65,42 @@ export default function Navbar() {
             )}
           </div>
         </div>
-        {/* Nav for Smaller screens */}
-        {menuOpen && (
-          <div className="fixed inset-0 bg-white z-40 flex flex-col items-center justify-center gap-8 transition-transform duration-500 md:hidden translate-y-0">
-            <a href="#home" className={styles.navthings}>
-              HOME
-            </a>
+      </motion.nav>
+      {/* Nav for Smaller screens */}
+      {menuOpen && (
+        <motion.div
+          initial={{ y: "-100%" }}
+          animate={{ y: 0 }}
+          exit={{ y: "-100%" }}
+          transition={{ duration: 0.4 }}
+          className="fixed inset-0 bg-white z-40 md:hidden flex flex-col items-center justify-center gap-8  translate-y-0 transition-all duration-300"
+        >
+          <a href="#home" className="text-3xl">
+            HOME
+          </a>
 
-            <a href="#projects" className={styles.navthings}>
-              PROJECTS
-            </a>
+          <a href="#projects" className="text-3xl">
+            PROJECTS
+          </a>
 
-            <a href="#about" className={styles.navthings}>
-              ABOUT
-            </a>
+          <a href="#about" className="text-3xl">
+            ABOUT
+          </a>
 
-            <a href="#contact" className={styles.navthings}>
-              CONTACT
-            </a>
-          </div>
-        )}
-      </nav>
+          <a href="#contact" className="text-3xl">
+            CONTACT
+          </a>
+
+          <a
+            className="text-3xl px-7 py-3 bg-[#7A121E] rounded-full text-white active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all"
+            href="https://wa.link/1tbhf7"
+            rel="noopenr"
+            target="blank"
+          >
+            Join Us
+          </a>
+        </motion.div>
+      )}
     </div>
   );
 }
