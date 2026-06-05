@@ -7,7 +7,7 @@ import { TiGroup } from "react-icons/ti";
 
 export default function Stories() {
   return (
-    <div className="py-32 container mx-auto">
+    <div id="impact" className="py-32 container mx-auto">
       <div className="text-center mb-15">
         <h1 className="font-bold text-3xl text-[#7A211E] mb-4">
           Our Short Story in Numbers...

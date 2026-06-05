@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 export default function Hero() {
   return (
-    <header className="relative mt-20 lg:mt-0 py-20 lg:py-32 overflow-hidden bg-linear-to-br from-[#FDFCFB] to-[#f6f3f2]">
+    <header id="home" className="relative mt-20 lg:mt-0 py-20 lg:py-32 overflow-hidden bg-linear-to-br from-[#FDFCFB] to-[#f6f3f2]">
       <div className="container mx-auto px-8 grid lg:grid-cols-2 gap-60 items-center ">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
@@ -21,10 +21,10 @@ export default function Hero() {
             passion into purpose for a thriving African continent.
           </p>
           <div className="text-white md:flex gap-3">
-            <div className="px-7 md:px-10 py-3 md:py-4 max-w-fit bg-[#7A211E] rounded-xl mb-3 md:mb-0">
+            <div className="px-7 md:px-10 py-3 md:py-4 max-w-fit bg-[#7A211E] cursor-pointer active:scale-95 hover:scale-[1.01]  transition-all rounded-xl mb-3 md:mb-0">
               Join the Movement
             </div>
-            <div className="px-14 md:px-17 py-3 md:py-4 max-w-fit bg-[#7A211E] rounded-xl">
+            <div className="px-14 md:px-17 py-3 md:py-4 max-w-fit bg-[#7A211E] cursor-pointer active:scale-95 hover:scale-[1.01] transition-all rounded-xl">
               Learn More
             </div>
           </div>

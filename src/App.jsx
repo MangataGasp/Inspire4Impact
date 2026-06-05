@@ -7,12 +7,13 @@ import Projects from './pages/Projects'
 import Gallery from './pages/Gallery'
 import Newsletter from './pages/Newsletter'
 import Footer from './pages/Footer'
+import { BrowserRouter, Routes } from 'react-router-dom'
 
 const App = () => {
   return (
     <div className=''>
       {/* bg link: "https://vimeo.com/1133110842?fl=pl&fe=sh" */}
-      <Navbar />
+       <Navbar />
       <Hero />
       <Stories />
       <About />

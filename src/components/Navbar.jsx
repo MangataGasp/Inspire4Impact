@@ -40,11 +40,11 @@ export default function Navbar() {
               About Us
             </a>
 
-            <a href="#contact" className={styles.navthings}>
+            <a href="#impact" className={styles.navthings}>
               Our Impact
             </a>
 
-            <div className="px-6 py-3 rounded-full font-bold hidden md:block bg-[#7A211E] cursor-pointer active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all">
+            <div className="px-6 py-3 rounded-full font-bold hidden md:block bg-[#7A211E] cursor-pointer active:scale-95 hover:scale-[1.01] transition-all">
               <a
                 className="lg:text-base font-medium text-white"
                 href="https://wa.link/1tbhf7"
@@ -73,7 +73,7 @@ export default function Navbar() {
           animate={{ y: 0 }}
           exit={{ y: "-100%" }}
           transition={{ duration: 0.4 }}
-          className="fixed inset-0 bg-white z-40 md:hidden flex flex-col items-center justify-center gap-8  translate-y-0 transition-all duration-300"
+          className="fixed inset-0 bg-white z-40 md:hidden flex flex-col items-center justify-center gap-8  translate-y-0 transition-all duration-100"
         >
           <a href="#home" className="text-3xl">
             HOME
@@ -87,7 +87,7 @@ export default function Navbar() {
             ABOUT
           </a>
 
-          <a href="#contact" className="text-3xl">
+          <a href="#impact" className="text-3xl">
             CONTACT
           </a>
 

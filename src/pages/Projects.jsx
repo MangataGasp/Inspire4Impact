@@ -5,7 +5,7 @@ import { IoMdArrowForward } from "react-icons/io";
 
 export default function Projects() {
   return (
-    <div className="container mx-auto py-32">
+    <div id="projects" className="container mx-auto py-32">
       <div className="mb-4 mx-2">
         <h1 className="uppercase text-[#FF6B35] mb-2">Making an Impact</h1>
         <div className="flex justify-between gap-2 items-center text-[#7A211E]">
