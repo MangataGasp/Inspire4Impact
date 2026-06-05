@@ -50,12 +50,13 @@ export default function Footer() {
           </div>
           <div className="space-y-6 ">
             <h1 className="uppercase text-[#FF6B35]">Quick Links</h1>
-            <ul className="text-white">
-              <li className="w-fit hover:translate-x-3 cursor-pointer transition-all duration-300">Impact Reports</li>
-              <li className="w-fit hover:translate-x-3 cursor-pointer transition-all duration-300">Media Kit</li>
-              <li className="w-fit hover:translate-x-3 cursor-pointer transition-all duration-300">Privacy Policy</li>
-              <li className="w-fit hover:translate-x-3 cursor-pointer transition-all duration-300">Contact</li>
-            </ul>
+            <div className="flex flex-col text-white">
+              <a className="w-fit hover:translate-x-3 cursor-pointer transition-all duration-300">Impact Reports</a>
+              <a className="w-fit hover:translate-x-3 cursor-pointer transition-all duration-300">Media Kit</a>
+              <a className="w-fit hover:translate-x-3 cursor-pointer transition-all duration-300">Privacy Policy</a>
+              <a className="w-fit hover:translate-x-3 cursor-pointer transition-all duration-300">Contact</a>
+            </div>
+            
           </div>
 
           <div className="space-y-6">

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 export default function Hero() {
   return (
     <header id="home" className="relative mt-20 lg:mt-0 py-20 lg:py-32 overflow-hidden bg-linear-to-br from-[#FDFCFB] to-[#f6f3f2]">
@@ -21,12 +22,12 @@ export default function Hero() {
             passion into purpose for a thriving African continent.
           </p>
           <div className="text-white md:flex gap-3">
-            <div className="px-7 md:px-10 py-3 md:py-4 max-w-fit bg-[#7A211E] cursor-pointer active:scale-95 hover:scale-[1.01]  transition-all rounded-xl mb-3 md:mb-0">
+            <div className="px-7 md:px-10 py-3 md:py-4 max-w-fit bg-[#7A211E] cursor-pointer active:scale-95 hover:scale-[1.01]  transition-all rounded-xl mb-5 md:mb-0">
               Join the Movement
             </div>
-            <div className="px-14 md:px-17 py-3 md:py-4 max-w-fit bg-[#7A211E] cursor-pointer active:scale-95 hover:scale-[1.01] transition-all rounded-xl">
+            <Link to="about" smooth={true} className="px-14 md:px-17 py-3 md:py-4 max-w-fit bg-[#7A211E] cursor-pointer active:scale-95 hover:scale-[1.01] transition-all rounded-xl">
               Learn More
-            </div>
+            </Link>
           </div>
         </motion.div>
         <motion.div initial={{ opacity: 0, rotate: "30deg" }}

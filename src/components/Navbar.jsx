@@ -2,14 +2,19 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { CiMenuBurger } from "react-icons/ci";
 import { RiCloseLargeFill } from "react-icons/ri";
+import { Link } from "react-scroll";
 const styles = {
   navthings:
     "hover:text-[#7A121E] hover:border-b-3 border-[#FF6B35] text-[#929090] cursor-pointer font-medium px-3 py-2 transition-colors duration-700 text-sm lg:text-base",
 };
-export default function Navbar() {
+export default function Navbar(sectionId) {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const handleLinkClick = () => {
+    setMenuOpen(false);
   };
   return (
     <div className="relative overflow-hidden">
@@ -28,21 +33,21 @@ export default function Navbar() {
             </h1>
           </div>
           <div className="hidden md:flex gap-x-4 lg:gap-x-8">
-            <a href="#home" className={styles.navthings}>
+            <Link to="home" smooth={true} duration={500} className={styles.navthings}>
               Home
-            </a>
+            </Link>
 
-            <a href="#projects" className={styles.navthings}>
+            <Link to="projects" smooth={true}  duration={500} className={styles.navthings}>
               Projects
-            </a>
+            </Link>
 
-            <a href="#about" className={styles.navthings}>
+            <Link to="about" smooth={true} duration={500} className={styles.navthings}>
               About Us
-            </a>
+            </Link>
 
-            <a href="#impact" className={styles.navthings}>
+            <Link to="impact" smooth={true} duration={500} className={styles.navthings}>
               Our Impact
-            </a>
+            </Link>
 
             <div className="px-6 py-3 rounded-full font-bold hidden md:block bg-[#7A211E] cursor-pointer active:scale-95 hover:scale-[1.01] transition-all">
               <a
@@ -75,21 +80,21 @@ export default function Navbar() {
           transition={{ duration: 0.4 }}
           className="fixed inset-0 bg-white z-40 md:hidden flex flex-col items-center justify-center gap-8  translate-y-0 transition-all duration-100"
         >
-          <a href="#home" className="text-3xl">
+          <Link onClick={handleLinkClick} to="home" className="text-3xl cursor-pointer">
             HOME
-          </a>
+          </Link>
 
-          <a href="#projects" className="text-3xl">
+          <Link onClick={handleLinkClick} to="projects" className="text-3xl cursor-pointer">
             PROJECTS
-          </a>
+          </Link>
 
-          <a href="#about" className="text-3xl">
+          <Link onClick={handleLinkClick} to="about" className="text-3xl cursor-pointer">
             ABOUT
-          </a>
+          </Link>
 
-          <a href="#impact" className="text-3xl">
-            CONTACT
-          </a>
+          <Link onClick={handleLinkClick} to="impact" className="text-3xl cursor-pointer">
+            OUR IMPACT
+          </Link>
 
           <a
             className="text-3xl px-7 py-3 bg-[#7A121E] rounded-full text-white active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all"

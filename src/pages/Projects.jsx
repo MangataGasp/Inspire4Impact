@@ -55,7 +55,7 @@ export default function Projects() {
 
         <motion.div
           initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 1 }}
+          whileInView={{ opacity: 1, y: 2 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           className=" group border border-[#e5e2e1] hover:translate-xy-8 hover:scale-[1.02] transition-all duration-300 shadow-sm hover:shadow-xl rounded-2xl hover:border-[#3d1ce4]"
@@ -87,7 +87,7 @@ export default function Projects() {
 
         <motion.div
           initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 1 }}
+          whileInView={{ opacity: 1, y: 3 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
           className="group border border-[#e5e2e1] hover:translate-xy-8 hover:scale-[1.02] transition-all duration-300 shadow-sm hover:shadow-xl rounded-2xl hover:border-[#FF6B35]"
